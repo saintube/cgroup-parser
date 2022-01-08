@@ -1,6 +1,5 @@
 # github.com/golang/glog v1.0.0
 ## explicit
-github.com/golang/glog
 # github.com/inconshreveable/mousetrap v1.0.0
 github.com/inconshreveable/mousetrap
 # github.com/spf13/cobra v1.3.0
