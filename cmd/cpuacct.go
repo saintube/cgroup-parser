@@ -42,6 +42,6 @@ var cpuacctCmd = &cobra.Command{
 
 func init() {
 	rootCmd.AddCommand(cpuacctCmd)
-	cpuacctCmd.Flags().IntVar(&Interval, "interval", 1000, "the interval for reading cpuacct cgroup file (milli-seconds)")
-	cpuacctCmd.Flags().IntVar(&Duration, "duration", 10000, "the interval for parsing cpuacct cgroup (milli-seconds)")
+	cpuacctCmd.Flags().IntVarP(&Interval, "interval", "i", 1000, "the interval for reading cpuacct cgroup file (milli-seconds)")
+	cpuacctCmd.Flags().IntVarP(&Duration, "duration", "d", 10000, "the interval for parsing cpuacct cgroup (milli-seconds)")
 }
