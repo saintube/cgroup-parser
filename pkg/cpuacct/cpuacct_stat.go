@@ -87,7 +87,7 @@ func loopReadStat(cgroupPath string, interval, duration int, jiffies float64) er
 	var count int64
 	var ts time.Time
 	nrReads := duration / interval
-	for i := 0; i < nrReads; i++ {
+	for i := 0; i <= nrReads; i++ {
 		fd, err := ioutil.ReadFile(filepath.Join(cgroupPath, StatFileName))
 		curTs := time.Now()
 		if err != nil {
